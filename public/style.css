@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover { 
+	text-decoration: none;
+}
+
+/*This is only needed if image opacity isn't used
+  or if another layer color is desired*/
+/*.imageLayer {
+	background-color: #ffffff;
+	opacity: 0.3;
+	position: absolute;
+	width: 100%;
+	height: 1200px;
+}*/
+
+.image {
+	background-image: url('../assets/images/clouds.jpg');
+	/*background-size: contain;*/
+	height: 2000px;
+	visibility: hidden;
+	overflow: hidden;
+    animation-name: move;
+    animation-duration: 65s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
+.wrapper {
+	overflow: hidden;
+	height: 629px;
+}
+
+.header {
+	background-color: #FFD2DC;
+	background-color: #ffffff;
+	width: 100%;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	opacity: 0.5;
+/*	visibility: hidden;*/
+}
+
+video {
+	width: 480px;
+	height: 270px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 90;
+	visibility: hidden;
+}
+
+/*USE ONLY IF YOU PLAY VIDEO SEPARATELY AT LOAD*/
+/*video {
+	width: 75%;
+	height: auto;
+	display: block;
+	position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 90;
+	visibility: hidden;
+}*/
+
+.menuBoxes {
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	top: 285px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	/*visibility: hidden;*/
+}
+
+div[class^='menuDetails'] {
+	width: 25%;
+	height: 100px;
+	margin: auto;
+	margin-bottom: 15px;
+	line-height: 100px;
+	text-align: center;
+	background-color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+div[class^='menuDetails']:hover {
+	background: rgba(294, 86, 100, 0.3);
+	color: #fff;
+	font-weight: 400;
+}
+
+div[class^='box'] {
+	position: absolute;
+	top: 285px;
+	width: 37.6%;
+	height: 345px;
+	margin: auto;
+	background-color: #ffffff;
+	opacity: 1;
+}
+
+.boxRight {
+	right: 0;
+}
+
+
+/*To do: Responsive design needs:
+ 	.menuBoxes:height, font size for menu at small screens;
+ 	#brand: small screens;
+ 	video: hide at small screens?;
+*/
+
+
+
+
+
