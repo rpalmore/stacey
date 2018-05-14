@@ -94,7 +94,7 @@ video {
 	/*visibility: hidden;*/
 }
 
-div[class^='menuDetails'] {
+.menuDetails {
 	width: 25%;
 	height: 100px;
 	margin: auto;
@@ -127,6 +127,50 @@ div[class^='box'] {
 	right: 0;
 }
 
+/*************** || NAVIGATION || ***************/
+
+nav {
+	top: 285px;
+	position: absolute;
+}
+
+nav .brand-logo {
+	margin-left: 15px;
+}
+
+/*************** || FAQ SECTION || ***************/
+
+
+.mainContent {
+	top: 366px;
+	position: absolute;
+	background-color: #fff;
+	width: 85%;
+	height: 345px;
+	left: 0;
+	right: 0;
+	margin: auto;
+    display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.textContainer {
+	width: 85%;
+	height: auto;
+	margin: auto;
+	margin-top: 15px;
+	font-family: 'Lato', sans-serif;
+	/*position: relative;*/
+}
+
+h2 {
+	text-align: center;
+}
+
+.questions {
+	font-size: 1.3rem;
+}
 
 /*To do: Responsive design needs:
  	.menuBoxes:height, font size for menu at small screens;
@@ -135,6 +179,24 @@ div[class^='box'] {
 */
 
 
+/*************** || RESPONSIVE DESIGN || ***************/
 
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  video {
+    width: 100%;
+ }
+  .menuDetails {
+  	width: 47%;
+  }
+  div[class^='box'] {
+	width: 27%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+	nav .brand-logo {
+	margin-left: 0;
+  }
+}
 
 
