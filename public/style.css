@@ -44,7 +44,7 @@ a:hover {
 }
 
 .wrapper {
-	min-height: calc(100vh - 50px);
+	min-height: calc(100vh - 51px);
 	max-width: 1440px;
     min-width: 320px;
     margin: auto;
@@ -230,10 +230,30 @@ h2 {
 /*************** || RESPONSIVE DESIGN || ***************/
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
+
+  .header {
+  	height: 207px;
+  }	
+  video {
+  	top: -25px;
+  }
+  nav {
+  	top: 220px;
+  }
   nav .brand-logo {
 	font-size: 1.7rem;
 	width: 100%;
 	text-align: center;
+  }
+  .menuBoxes {
+  	top: 276px;
+  	border-bottom: 65px solid #ffcc80;
+  }
+  div[class^='box'] {
+	top: 276px;
+  }
+  div[class^='layer'] {
+	top: 276px;
   }
 }
 
