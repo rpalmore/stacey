@@ -1,10 +1,13 @@
 body {
 	margin: 0;
+	padding: 0;
+	background-color: #ffab91;
 }
 
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color: #666;
 }
 
 a:hover { 
@@ -22,10 +25,12 @@ a:hover {
 }*/
 
 .image {
-	background-image: url('../assets/images/clouds.jpg');
-	/*background-size: contain;*/
+	background-image: url('../assets/images/roses.jpg');
+	/*position: absolute;*/
+	width: 100%;
 	height: 2000px;
-	visibility: hidden;
+    background-size: contain;
+	/*visibility: hidden;*/
 	overflow: hidden;
     animation-name: move;
     animation-duration: 65s;
@@ -39,18 +44,30 @@ a:hover {
 }
 
 .wrapper {
+	min-height: calc(100vh - 50px);
+	max-width: 1440px;
+    min-width: 320px;
+    margin: auto;
+    position: relative;
+}
+
+.imageContainer {
+	height: 718px;
+	width: 100%;
+	/*position: absolute;*/
 	overflow: hidden;
-	height: 629px;
 }
 
 .header {
 	background-color: #FFD2DC;
-	background-color: #ffffff;
+	/*background-color: #048BA8;*/
+	/*background-color: #ffffff;*/
+	background: rgba(294, 86, 100, 0.3);
 	width: 100%;
-	height: 270px;
+	height: 280px;
 	position: absolute;
 	top: 0;
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 /*	visibility: hidden;*/
 }
 
@@ -59,7 +76,7 @@ video {
 	height: 270px;
 	display: block;
 	position: absolute;
-	top: 0;
+	top: 10px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -81,16 +98,25 @@ video {
 	visibility: hidden;
 }*/
 
+/*************** || NAVIGATION || ***************/
+
+nav {
+	top: 290px;
+	position: absolute;
+	border-bottom: 2px solid #fff;
+}
+
 .menuBoxes {
 	width: 100%;
 	left: 0;
 	right: 0;
 	margin: auto;
 	position: absolute;
-	top: 285px;
+	top: 354px;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+	border-bottom: 19px solid #ffcc80;
 	/*visibility: hidden;*/
 }
 
@@ -102,20 +128,37 @@ video {
 	line-height: 100px;
 	text-align: center;
 	background-color: #ffffff;
+	background-color: #ffab91;
+	background-color: #ffe082;
+	background-color: #ffcc80;
+	color: #e65100;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 1.5rem;
 }
 
+div[class^='layer'] {
+	position: absolute;
+	top: 354px;
+	width: 37.6%;
+	height: 345px;
+	/*height: 370px;*/
+	background-color: #ffe082;
+	background-color: #ffab91;
+	background-color: #ffccbc;
+	background-color: #ffcc80;
+	z-index: 100;
+}
+
 div[class^='menuDetails']:hover {
-	background: rgba(294, 86, 100, 0.3);
+	background: rgba(294, 86, 100, 0.5);
 	color: #fff;
 	font-weight: 400;
 }
 
 div[class^='box'] {
 	position: absolute;
-	top: 285px;
+	top: 354px;
 	width: 37.6%;
 	height: 345px;
 	margin: auto;
@@ -123,19 +166,24 @@ div[class^='box'] {
 	opacity: 1;
 }
 
-.boxRight {
+.boxRight, .layerRight {
 	right: 0;
 }
 
-/*************** || NAVIGATION || ***************/
 
-nav {
-	top: 285px;
-	position: absolute;
+/*************** || FOOTER || ***************/
+
+footer {
+  text-align: center;
+  line-height: 50px;
+  margin: auto;
+  background-color: #ee6e73;
+  background-color: #ffab91;
+  border-top: 1px solid #fff;
 }
 
-nav .brand-logo {
-	margin-left: 15px;
+.copyright {
+  color: #666;
 }
 
 /*************** || FAQ SECTION || ***************/
@@ -181,6 +229,14 @@ h2 {
 
 /*************** || RESPONSIVE DESIGN || ***************/
 
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  nav .brand-logo {
+	font-size: 1.7rem;
+	width: 100%;
+	text-align: center;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   video {
     width: 100%;
@@ -191,12 +247,24 @@ h2 {
   div[class^='box'] {
 	width: 27%;
   }
-}
-
-@media only screen and (max-width: 992px) {
-	nav .brand-logo {
-	margin-left: 0;
+  div[class^='layer'] {
+	width: 27%;
   }
 }
+
+@media only screen and (min-width: 375px) and (max-width: 992px) {
+  nav .brand-logo {
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+   nav .brand-logo {
+	margin-left: 15px;
+  }
+}
+
 
 
