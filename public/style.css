@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #ffab91;
+	background-color: #fff3e0;
 }
 
 a {
@@ -25,8 +26,7 @@ a:hover {
 }*/
 
 .image {
-	background-image: url('../assets/images/roses.jpg');
-	/*position: absolute;*/
+	background-image: url('../assets/images/collage.jpg');
 	width: 100%;
 	height: 2000px;
     background-size: contain;
@@ -54,14 +54,10 @@ a:hover {
 .imageContainer {
 	height: 718px;
 	width: 100%;
-	/*position: absolute;*/
 	overflow: hidden;
 }
 
 .header {
-	background-color: #FFD2DC;
-	/*background-color: #048BA8;*/
-	/*background-color: #ffffff;*/
 	background: rgba(294, 86, 100, 0.3);
 	width: 100%;
 	height: 280px;
@@ -103,7 +99,17 @@ video {
 nav {
 	top: 290px;
 	position: absolute;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #ef9a9a;
+	border-bottom: 4px solid #ffebee;
+	border-bottom: 4px solid #fff;
+	background-color: #ffebee;
+	background-color: #fff;
+	background-color: #fff3e0;
+	background-color: #e0f2f1;
+}
+
+nav .brand-logo {
+	color: #80cbc4;
 }
 
 .menuBoxes {
@@ -117,6 +123,7 @@ nav {
 	flex-direction: column;
 	justify-content: start;
 	border-bottom: 19px solid #ffcc80;
+	border-bottom: 19px solid #fff3e0;
 	/*visibility: hidden;*/
 }
 
@@ -127,11 +134,12 @@ nav {
 	margin-bottom: 15px;
 	line-height: 100px;
 	text-align: center;
-	background-color: #ffffff;
-	background-color: #ffab91;
-	background-color: #ffe082;
 	background-color: #ffcc80;
+	background-color: #e0f2f1;
+	background-color: #fbe9e7;
+	background-color: #fff3e0;
 	color: #e65100;
+	color: #e57373;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 1.5rem;
@@ -143,15 +151,13 @@ div[class^='layer'] {
 	width: 37.6%;
 	height: 345px;
 	/*height: 370px;*/
-	background-color: #ffe082;
-	background-color: #ffab91;
-	background-color: #ffccbc;
 	background-color: #ffcc80;
+	background-color: #fff3e0;
 	z-index: 100;
 }
 
 div[class^='menuDetails']:hover {
-	background: rgba(294, 86, 100, 0.5);
+	background: rgba(294, 86, 100, 0.3);
 	color: #fff;
 	font-weight: 400;
 }
@@ -177,8 +183,9 @@ footer {
   text-align: center;
   line-height: 50px;
   margin: auto;
-  background-color: #ee6e73;
   background-color: #ffab91;
+  background-color: #fbe9e7;
+  background-color: #e0f2f1;
   border-top: 1px solid #fff;
 }
 
@@ -247,7 +254,7 @@ h2 {
   }
   .menuBoxes {
   	top: 276px;
-  	border-bottom: 65px solid #ffcc80;
+  	border-bottom: 65px solid #fff3e0;
   }
   div[class^='box'] {
 	top: 276px;
