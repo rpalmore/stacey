@@ -63,8 +63,8 @@ app.get('/', function(req, res) {
     res.sendFile('index.html', { root: __dirname });
 });
 
-app.get('/pricing', function(req, res) {
-    res.sendFile('pricing.html', { root: __dirname + "/public" });
+app.get('/prices', function(req, res) {
+    res.sendFile('prices.html', { root: __dirname + "/public" });
 });
 
 app.get('/about', function(req, res) {

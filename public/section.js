@@ -1,3 +1,6 @@
+// THIS CAN BE DELETED AS OF NOW
+console.log("you cannot delete me");
+
 const vid = document.getElementById('welcome'); 
 
 toggleVid = () => {
