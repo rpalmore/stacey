@@ -11,7 +11,7 @@ toggleVid = () => {
 };
 
 TweenLite.to('#welcome', 1, {autoAlpha:1, delay:.2});
-// TweenLite.to('.image', .2, {autoAlpha:1, delay:.1});
+// TweenLite.to('.image', 1, {autoAlpha:1, delay:7});
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
@@ -23,25 +23,24 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 });
 
-// TO DO: CLEAN ALL OF THIS UP SO NO REPETITION
+var question = "";
+var answer = "";
 
-var q1 = document.getElementById("q1"),
-    q2 = document.getElementById("q2"),
-    q3 = document.getElementById("q3"),
-    q4 = document.getElementById("q4"),
-    q5 = document.getElementById("q5"),
-    q6 = document.getElementById("q6"),
-    q7 = document.getElementById("q7"),
-    q8 = document.getElementById("q8");
-    q9 = document.getElementById("q9");
-    btn = document.getElementsByClassName("btn-floating");
-    extra = document.getElementById("extraPadding");
+for (var _n = 1; _n < 10; _n++) {
+  var question_n = document.getElementById("q"+_n);
+  var answer_n = document.getElementById("answer"+_n);
+
+};
+
+var btn = document.getElementsByClassName("btn-floating");
 
 for (var i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
     TweenLite.to(window, .7, {scrollTo:{y:"nav"}})
   }
 };
+
+// TO DO: CLEAN ALL OF THIS UP SO NO REPETITION
 
 q1.onclick = function() {
   TweenLite.to(window, .7, {scrollTo:{y:"#answer1", offsetY:5}});

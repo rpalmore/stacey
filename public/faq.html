@@ -16,25 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
-    <script>
-      WebFontConfig = {
-        google: { families: ['Lato:300,400']},
-          timeout: 2000,
-          active: function() {
-            sessionStorage.fonts = true;
-          }
-      };
-    </script>
-    <script>
-      (function() {
-        if (sessionStorage.fonts) {
-          console.log("Fonts installed.");
-          document.documentElement.classList.add('wf-active');
-        } else {
-          console.log("No fonts installed.");
-        }
-      })();
-    </script>
+
   </head>
   <body>
   <div class='wrapper'>
@@ -72,15 +54,60 @@
     <div class='mainContent'>
       <div class='textContainer'>
         <div class='questions'>
-          <p class='bullet' id='q1'>&bull; Is your work hand-lettered?</p>
-          <p class='bullet' id='q2'>&bull; Are you currently taking orders?</p>
-          <p class='bullet' id='q3'>&bull; How long does it take to fill an order?</p>
-          <p class='bullet' id='q4'>&bull; How much advance notice do you need?</p>
-          <p class='bullet' id='q5'>&bull; What are your different style options?</p>
-          <p class='bullet' id='q6'>&bull; Can I pick my own lettering colors?</p>
-          <p class='bullet' id='q7'>&bull; What sort of payment do you accept?</p>
-          <p class='bullet' id='q8'>&bull; Do you have a minimum order requirement?</p>
-          <p class='bullet' id='q9'>&bull; Will I get any digital files?</p>
+          <p id='q1'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              Is your work hand-lettered?
+            </span>
+          </p>
+          <p id='q2'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              Are you currently taking orders?
+            </span>
+          </p>
+          <p id='q3'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              How long does it take to fill an order?
+            </span>
+          </p>
+          <p id='q4'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              How much advance notice do you need?
+            </span>
+          </p>
+          <p id='q5'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              What are your different style options?
+            </span>
+          </p>
+          <p id='q6'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              Can I pick my own lettering colors?
+            </span>
+          </p>
+          <p id='q7'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              What sort of payment do you accept?
+            </span>
+          </p>
+          <p id='q8'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              Do you have a minimum order requirement?
+            </span>
+          </p>
+          <p id='q9'>
+            <span class='bullet'>&bull;</span>
+            <span class='question'>
+              Will I get any digital files?
+            </span>
+          </p>
         </div>
         <div class='answers'>
           <p id='answer1'>
@@ -92,7 +119,7 @@
           </div>
           <p id='answer2'>
             <p class='qRepeat'>Are you currently taking orders?</p>
-            Yes. I am currently taking orders. Go here to place your order.
+            Yes. I am currently taking orders. Go here to place your order / inquire about an order.
           </p>
           <div class='btnTop'>
             <a class="btn-floating btn-small waves-effect waves-light ruby"><i class="material-icons">arrow_upward</i></a>
