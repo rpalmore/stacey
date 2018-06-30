@@ -28,7 +28,8 @@ a:hover {
 .image {
 	background-image: url('../assets/images/collage.jpg');
 	width: 100%;
-	height: 2000px;
+/*	height: 2000px;*/
+    min-height: 1400px;
     background-size: contain;
 /*	visibility: hidden;*/
 	overflow: hidden;
@@ -55,11 +56,11 @@ a:hover {
 	height: 697px;
 	width: 100%;
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 
 .imageContainerSection {
 	width: 100%;
-	/*height: 300px;*/
 	overflow: hidden;
 	position: relative;
 }
@@ -131,6 +132,7 @@ nav a {
 ul#mobile-demo.sidenav {
 	background-color: #fff3e0;
 	border-right: 3px solid rgba(294, 86, 100, 0.3);
+	width: 250px;
 }
 
 /*************** || HOME MAIN CONTENT || ***************/
@@ -186,13 +188,22 @@ div[class^='box'] {
 	right: 0;
 }
 
-#homeImage {
+.containerSlider {
+	width: 75%;
+	margin: 50px auto;
+}
+
+.slider .indicators .indicator-item.active {
+	background-color: #e57373;
+}
+
+/*#homeImage {
 	width: 75%;
 	height: 400px;
 	margin: auto;
 	background-image: url('../assets/images/collage.jpg');
 	margin-top: 50px;
-}
+}*/
 
 /*************** || FOOTER || ***************/
 
@@ -213,8 +224,7 @@ footer {
   color: #666;
 }
 
-/*************** || FAQ SECTION || ***************/
-
+/*************** || SECTIONS || ***************/
 
 .mainContent {
 	top: 354px;
@@ -226,9 +236,7 @@ footer {
 	background-color: #D8C6BD;
     background-color: #F9ECE5;
     background-color: #d7ccc8;
-	width: 100%;
-	/*height: 345px;*/
-	/*overflow: scroll;*/
+/*	width: 100%;*/
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -250,9 +258,34 @@ footer {
 	background-color: #fff3e0;
 }
 
-h2 {
-	text-align: center;
+/*************** || ABOUT SECTION || ***************/
+
+img {
+	width: 38%;
+	height: auto;
+	float: right;
 }
+
+.bio {
+	font-size: 1.3rem;
+	width: 70%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+
+/*************** || PRICES SECTION || ***************/
+
+/*.containerCarousel {
+	width: 55%;
+	margin: auto;
+}*/
+
+/*************** || FAQ SECTION || ***************/
+
+/*h2 {
+	text-align: center;
+}*/
 
 .questions, .answers {
 	font-size: 1.3rem;
@@ -270,31 +303,10 @@ h2 {
 	cursor: pointer;
 }
 
-/*.bullet {
-	padding-left: 5px;
-	flex: auto;
-	order: 1;
-}
-
-.question {
-	flex: auto;
-	order: 2;
-}*/
-
 .answers {
 	border-top: 2px solid #fff;
 	padding-top: 20px;
-/*	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	align-items: center;*/
-	/*height: 1000px;*/
-	/*width: 70%;*/
 }
-
-/*#answer1 {
-	width: 50%;
-}*/
 
 .qRepeat {
 	font-weight: bold;
@@ -318,12 +330,6 @@ h2 {
 	background-image: url('../assets/images/collage.jpg');
 	margin-top: 20px;
 }
-/*To do: Responsive design needs:
- 	.menuBoxes:height, font size for menu at small screens;
- 	#brand: small screens;
- 	video: hide at small screens?;
-*/
-
 
 /*************** || RESPONSIVE DESIGN || ***************/
 
@@ -369,7 +375,7 @@ h2 {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   video {
     width: 100%;
- }
+  }
   .menuDetails {
   	width: 47%;
   }
